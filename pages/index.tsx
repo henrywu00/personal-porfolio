@@ -17,22 +17,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Header */}
-      <Header/>
+      <div className='fixed z-[100]'>
+        <Header/>
+      </div>
+      
       {/* Hero */}
-      <section id='hero' className='mb-20'>
+      <section id='hero' className=''>
         <Hero />
       </section>
-      
-      <section id='about' className='-skew-y-12'>
-        <Parallax baseVelocity={5} image=''>i'm a gamer</Parallax>
-        <Parallax baseVelocity={-5} image='/Vandal.png/'> </Parallax>
-      </section>
-      
 
       {/* About */}
-      <section className=''>
+      <section id='about' className=''>
         <About/>
       </section>
+
+
       {/* Experience */}
       <section id='experience' className=''>
         <Experience/>
@@ -44,7 +43,6 @@ export default function Home() {
       </section>
       
       {/* Contact Me */}
-      <Contact/>
     </div>
   )
 }

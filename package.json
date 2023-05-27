@@ -7,13 +7,19 @@
   },
   "dependencies": {
     "@motionone/utils": "^10.15.1",
+    "@react-three/drei": "^9.70.0",
+    "@react-three/fiber": "^8.13.0",
+    "@types/three": "^0.152.1",
     "framer-motion": "^10.12.12",
+    "framer-motion-3d": "^10.12.16",
+    "maath": "^0.6.0",
     "motion": "^10.16.2",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-simple-typewriter": "^5.0.1",
-    "react-social-icons": "^5.15.0"
+    "react-social-icons": "^5.15.0",
+    "three": "^0.152.2"
   },
   "devDependencies": {
     "@types/node": "20.1.7",

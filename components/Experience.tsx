@@ -10,17 +10,13 @@ function Experience({}: Props) {
     initial={{opacity: 0}}
     whileInView={{opacity:1}}
     transition={{duration:1.5}}
-    className='h-screen flex relative overflow-hidden flex-col text-lft md:flex-row
-        max-w-full px-10 justify-evenly mx-auto items-center'>
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500
+    className='h-screen flex flex-col justify-evenly items-center'>
+        <h3 className='top-24 uppercase tracking-[20px] text-gray-500
         text-2xl'>Experience</h3>
 
 
-        <div className='w-full flex-col space-x-5 p-10'>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+        <div className='w-full flex-col p-10 items-center text-center'>
+            <h1>WIP stay tuned</h1>
         </div>
     </motion.div>
   )

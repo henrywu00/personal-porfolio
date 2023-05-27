@@ -7,7 +7,7 @@ type Props = {}
 
 export default function Header({}: Props) {
     return (
-        <header className='sticky top-0 flex items-start'>
+        <header className='top-0 flex items-start'>
             <motion.div 
             initial={{
                 x: -500,
@@ -31,6 +31,11 @@ export default function Header({}: Props) {
                 />
                 <SocialIcon 
                     url='https://www.linkedin.com/in/henry-wu-6742771a0/'
+                    fgColor='gray'
+                    bgColor='transparent'
+                />
+                <SocialIcon
+                    url='https://soundcloud.com/yuna120'
                     fgColor='gray'
                     bgColor='transparent'
                 />
