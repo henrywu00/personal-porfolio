@@ -25,7 +25,7 @@ function About({}: Props) {
                 }}
                 transition={{duration:1.5}}
                 viewport={{ once: true }}
-                className='lg:basis-1/2 lg:p-10 p-20'>
+                className='lg:basis-1/2 lg:p-40 p-20'>
 
           <img src='/henry-photo.png' className='rounded-full'/>
         </motion.div>

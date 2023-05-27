@@ -2,6 +2,7 @@ import React, { useRef, useState, Suspense } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF, Points, PointMaterial } from '@react-three/drei';
 import { random } from 'maath';
+import { Mesh } from 'three';
 
 import {
     motion,
@@ -18,12 +19,14 @@ type Props = {}
 const deg2rad = degrees => degrees * (Math.PI / 180);
 
 const Stars = (props) => {
-    const ref = useRef();
+    const ref = useRef<Mesh>();
     const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 10 }));
   
     useFrame((state, delta) => {
-      ref.current.rotation.x -= delta / 10;
-      ref.current.rotation.y -= delta / 15;
+      if (ref.current) {
+        ref.current.rotation.x -= delta / 10;
+        ref.current.rotation.y -= delta / 15;
+      }
     });
   
     return (
