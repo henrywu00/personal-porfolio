@@ -24,7 +24,7 @@ export default function Hero ({}: Props) {
         <Lattice/>
         
 
-        <h1 className='text-5xl lg:text-7xl font-cutive font-bold scroll-px-10'>
+        <h1 className='text-5xl lg:text-7xl font-sans scroll-px-10'>
             <span className='mr-3'>{text}</span>
             <Cursor cursorColor='#F7AB0A'/>
         </h1>

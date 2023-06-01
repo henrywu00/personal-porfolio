@@ -2,42 +2,43 @@ import React from 'react'
 import {motion} from 'framer-motion'
 
 
-type Props = {}
+type Props = {
+  data: Xperience
+}
 
-function Card({}: Props) {
+
+function Card({data}: Props) {
+  const desc = data.desc.map((e) => <li key={e}>{e}</li>);
+  const techs = data.tech.map((e) => <div key={e} className='rounded-full bg-[rgb(82,92,155)] px-5'>{e}</div>)
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0
-    w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40
-    cursor-pointer transition-opacity duration-200 overflow-hidden
-    '>
-        <motion.img
-        initial={{
-            y: -100,
-            opacity: 0,
-        }}
-        transition={{duration: 1.2}}
-        whileInView={{opacity: 1, y: 0}}
-        viewport={{once: true}}
-
-        className='w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center'
-        src="/meta-logo.png/"/>
-
-        <div className='px-0 md:px-10'>
-            <h4 className='text-4xl font-light'>Software Engineering Intern</h4>
-            <p className='font-bol text-2xl mt-1'>Meta</p>
-            <div className='flex space-x-2 my-2'>
-
+    <motion.div 
+    initial={{
+      x: -500,
+      opacity: 0,
+    }}
+    whileInView={{
+      x: 0,
+      opacity: 1,
+    }}
+    transition={{duration:1.5}}
+    viewport={{ once: true }}
+    className='flex flex-col flex-shrink-0 w-[500px] md:w-[600px] xl:w-[700px] justify-between rounded-lg p-10 bg-[rgb(46,46,46)] m-5'>
+        <article className='flex flex-col justify-start font-sans items-center '>
+            <img src={data.img} className='w-32 h-32 mb-5'/>
+            <div className='px-0 md:px-10'>
+              <h4 className='text-4xl font-light'>{data.company}</h4>
+              <p className='font-bol text-2xl mt-1'>{data.title}</p>
+              <p className='uppercase py-5 text-gray-300'>{data.start} - {data.end}</p>
+              <ul className='list-disc space-y-4 ml-5 text-lg'>
+                {desc}
+              </ul>
             </div>
-            <p className='uppercase py-5 text-gray-300'>Started - Ended</p>
-            <ul className='list-disc space-y-4 ml-5 text-lg'>
-                <li>p</li>
-                <li>p</li>
-                <li>p</li>
-                <li>p</li>
-                <li>p</li>
-            </ul>
-        </div>
-    </article>
+        </article>
+      <div className='flex flex-row flex-wrap px-10 self-start my-5 gap-2'>
+        {techs}
+      </div>
+    </motion.div>
+        
   )
 }
 

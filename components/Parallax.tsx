@@ -19,7 +19,7 @@ type Props = {
 }
 
 
-function Parallax({children, baseVelocity = 100, image = ""}: Props) {
+function Parallax({children, baseVelocity = 50, image = ""}: Props) {
 
     const baseX = useMotionValue(0);
     const {scrollY} = useScroll();
