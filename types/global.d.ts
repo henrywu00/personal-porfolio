@@ -9,3 +9,14 @@ declare interface Xperience {
     img: string;
     tech: string[];
 }
+
+declare interface ProjectData {
+    id: number;
+    title: string;
+    brief: string;
+    description: string;
+    tech: string[];
+    links: string[];
+    img: string;
+    logo: boolean;
+}

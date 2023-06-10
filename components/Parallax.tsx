@@ -54,20 +54,14 @@ function Parallax({children, baseVelocity = 50, image = ""}: Props) {
     const has_image = image != "";
     let sc;
     if (has_image) {
-        const img = [...Array(16)].map((e, i) => <span><img src={image} className='max-w-min'/></span>)
+        const img = [...Array(16)].map((e, i) => <span key={i}><img key={i} src={image} className='max-w-min'/></span>)
         sc = <div className='flex'>
         {img}
         </div>
     } else {
+        const content = [...Array(16)].map((e, i) => <span key={i}>{children}</span>)
         sc = <div className='flex'>
-        <span>{children}</span>
-        <span>{children}</span>
-        <span>{children}</span>
-        <span>{children}</span>
-        <span>{children}</span>
-        <span>{children}</span>
-        <span>{children}</span>
-        <span>{children}</span>
+            {content}
         </div>
     }
 

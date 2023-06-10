@@ -15,8 +15,6 @@ import {
 
 type Props = {}
 
-const deg2rad = degrees => degrees * (Math.PI / 180);
-
 
 function Earth({}: Props) {
     
@@ -44,8 +42,6 @@ function Lattice({}: Props) {
                 <Preload all />
             </Canvas>
         </div>
-            
-
     )
 }
 

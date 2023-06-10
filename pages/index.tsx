@@ -8,8 +8,11 @@ import Contact from '../components/Contact';
 import Nav from '../components/Header';
 import Header from '../components/Header';
 import Parallax from '../components/Parallax';
+import { useState } from 'react';
+import Modal from '../components/Modal';
 
 export default function Home() {
+  const [selected, setSelected] = useState(null)
   return (
     <div className='bg-[rgb(36,36,36)] text-white z-0'>
       <Head>
@@ -39,8 +42,9 @@ export default function Home() {
       
       {/* Projects */}
       <section id='projects' className=''>
-      <Projects/>
+      <Projects setSelected={setSelected}/>
       </section>
+      <Modal selected={selected} setSelected={setSelected}/>
       
       {/* Contact Me */}
     </div>
