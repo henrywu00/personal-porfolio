@@ -38,8 +38,24 @@ const Purdue: Xperience = {
 function Experience({}: Props) {
   return (
     <div 
-    className='flex flex-col justify-evenly items-center max-w-full'>
-        <h3 className='text-5xl lg:text-6xl font-sans font-bold'>Experience</h3>
+    className='flex flex-col justify-evenly items-center max-w-full overflow-hidden'>
+      <motion.div 
+                initial={{
+                  x: -200,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1
+                }}
+                transition={{duration:1.5}}
+                viewport={{ once: true }}
+                className='lg:basis-1/2 py-10 lg:p-30 md:p-20'>
+
+          <h3 className='text-5xl lg:text-6xl font-sans font-bold'>Experience</h3>
+      </motion.div>
+        
 
         <div id='card-container' className='flex flex-col p-10'>
             <Card data={Meta}/>

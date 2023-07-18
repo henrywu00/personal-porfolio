@@ -9,7 +9,7 @@ type Props = {
 function ProjectCard({setSelected, data}: Props) {
   return (
     <motion.div 
-        className='bg-[rgb(46,46,46)] cursor-pointer shadow-xl flex flex-col justify-between'
+        className='bg-[rgb(46,46,46)] cursor-pointer shadow-xl flex flex-col justify-between mb-10 md:mb-0'
         whileHover={{
             scale: 1.025,
             transition: {
@@ -25,7 +25,7 @@ function ProjectCard({setSelected, data}: Props) {
         layoutId={`card-${data.id}`}
         >
         <div className='flex justify-center items-center'>
-            {data.logo && <img src={data.img} className='h-full w-auto'/>}
+            {data.logo && <img src={data.img} className='h-full w-[400px]'/>}
             {!data.logo && <img src={data.img} className='object-cover'/>}
         </div>
         <div className='inset-x-0 bottom-0 m-10'>

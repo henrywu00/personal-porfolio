@@ -13,7 +13,7 @@ function Card({data}: Props) {
   return (
     <motion.div 
     initial={{
-      x: -500,
+      x: -200,
       opacity: 0,
     }}
     whileInView={{
@@ -22,7 +22,7 @@ function Card({data}: Props) {
     }}
     transition={{duration:1.5}}
     viewport={{ once: true }}
-    className='flex flex-col flex-shrink-0 shadow-xl w-[500px] md:w-[600px] xl:w-[700px] justify-between p-10 bg-[rgb(46,46,46)] m-5'>
+    className='flex flex-col flex-shrink-0 shadow-xl w-auto md:w-[600px] xl:w-[700px] justify-between p-10 bg-[rgb(46,46,46)] m-5'>
         <article className='flex flex-col justify-start font-sans items-center '>
             <img src={data.img} className='w-32 h-32 mb-5'/>
             <div className='px-0 md:px-10'>

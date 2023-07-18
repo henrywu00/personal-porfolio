@@ -10,6 +10,7 @@ import Header from '../components/Header';
 import Parallax from '../components/Parallax';
 import { useState } from 'react';
 import Modal from '../components/Modal';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const [selected, setSelected] = useState(null)
@@ -36,17 +37,21 @@ export default function Home() {
 
 
       {/* Experience */}
+
       <section id='experience' className=''>
         <Experience/>
       </section>
       
       {/* Projects */}
+
       <section id='projects' className=''>
+      
       <Projects setSelected={setSelected}/>
       </section>
       <Modal selected={selected} setSelected={setSelected}/>
-      
+
       {/* Contact Me */}
+      <Footer/>
     </div>
   )
 }
