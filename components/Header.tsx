@@ -28,16 +28,19 @@ export default function Header({}: Props) {
                     url='https://github.com/henrywu00'
                     fgColor='gray'
                     bgColor='transparent'
+                    target="_blank"
                 />
                 <SocialIcon 
-                    url='https://www.linkedin.com/in/henry-wu-6742771a0/'
+                    url='https://www.linkedin.com/in/henry-wu00'
                     fgColor='gray'
                     bgColor='transparent'
+                    target="_blank"
                 />
                 <SocialIcon
-                    url='https://soundcloud.com/yuna120'
+                    url='/Henry_Wu_Resume__.pdf'
                     fgColor='gray'
                     bgColor='transparent'
+                    target="_blank"
                 />
             </motion.div>
         </header>
