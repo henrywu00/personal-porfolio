@@ -64,13 +64,12 @@ function About({}: Props) {
                 transition={{duration:1.5}}
                 viewport={{ once: true }}
         className='xl:basis-1/2 xl:p-10'>
-          <p className='font-sans text-xl md:text-2xl'>I am a recent computer science graduate from Purdue University currently looking for Software Engineering opportunities! I am a fullstack focused engineer
-                with a passion for problem solving and self learning. <br></br><br></br>
+          <p className='font-sans text-xl md:text-2xl'>I am a recent computer science graduate (May 2023) from Purdue University currently looking for Software Engineering opportunities!<br></br><br></br>
                 
-                During my degree, I specialized in computer graphics and machine intelligence. My goal is to integrate computer graphics with frontend development and bring
-                a whole new dimension to the web. At the same time I wish to continue to develop my skills as an engineer in this rapidly changing industry. <br></br><br></br>
+                During my degree, I specialized in computer graphics and machine intelligence. With my passion for problem solving and self learning, I hope to integrate computer graphics with frontend development and bring
+                a whole new dimension to the web. At the same time, I wish to continue to develop my skills as an engineer in this rapidly changing industry. <br></br><br></br>
                 
-                During my freetime, I enjoy playing video games and creating electronic music.
+                During my freetime, I also enjoy playing video games and creating electronic music.
           </p>
         </motion.div>
       </div>

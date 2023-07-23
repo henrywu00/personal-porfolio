@@ -11,8 +11,9 @@ const Meta: Xperience = {
   start: "May 2022",
   end: "Aug 2022",
   location: "Menlo Park, CA",
-  desc: ["Implemented a core feature that was responsible for the world building pipeline in Meta's Horizon Worlds that reached over 200,000 users", 
+  desc: ["Created UI components with React VR for a core feature responsible for the world building pipeline in Meta’s Horizon Worlds that reached over 200,000 users", 
   "Optimized dataflow from UI to Unity backend, improving performance by 30%",
+  "Conducted end-to-end integration tests and unit testing to ensure high quality code",
   "Collaborated with cross-functional partners to implement fixes for critical user-facing bugs"],
   img: "./meta-logo.png",
   tech: ["Unity", "C#", "React", "JavaScript", "TypeScript", "Flow"]
